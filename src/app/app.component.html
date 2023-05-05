@@ -77,20 +77,23 @@
         <th style="width: 3rem">
           <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
         </th>
-        <th pSortableColumn="name">
-          Nome <p-sortIcon field="name"></p-sortIcon>
+        <th pSortableColumn="nome">
+          Nome <p-sortIcon field="nome"></p-sortIcon>
         </th>
-        <th pSortableColumn="price">
-          Preço <p-sortIcon field="price"></p-sortIcon>
+        <th pSortableColumn="genero">
+          Genero <p-sortIcon field="genero"></p-sortIcon>
         </th>
-        <th pSortableColumn="category">
-          Categoria <p-sortIcon field="category"></p-sortIcon>
+        <th pSortableColumn="altura">
+          Altura <p-sortIcon field="altura"></p-sortIcon>
         </th>
-        <th pSortableColumn="rating">
-          Reviews <p-sortIcon field="rating"></p-sortIcon>
+        <th pSortableColumn="peso">
+          Peso <p-sortIcon field="peso"></p-sortIcon>
         </th>
-        <th pSortableColumn="inventoryStatus">
-          Status <p-sortIcon field="inventoryStatus"></p-sortIcon>
+        <th pSortableColumn="telefone">
+          telefone <p-sortIcon field="telefone"></p-sortIcon>
+        </th>
+        <th pSortableColumn="observacoes">
+          Observações <p-sortIcon field="observacoes"></p-sortIcon>
         </th>
         <th></th>
       </tr>
@@ -167,11 +170,11 @@
       >
     </div>
     <div class="p-field">
-      <label for="description">Descrição</label>
+      <label for="altura">Altura</label>
       <textarea
-        id="description"
+        id="altura"
         pInputTextarea
-        [(ngModel)]="product.description"
+        [(ngModel)]="product.altura"
         required
         rows="3"
         cols="20"
@@ -179,16 +182,16 @@
     </div>
 
     <div class="p-field">
-      <label class="p-mb-3">Categoria</label>
+      <label class="p-mb-3">Peso</label>
       <div class="p-formgrid p-grid">
         <div class="p-field-radiobutton p-col-6">
           <p-radioButton
             id="category1"
-            name="category"
+            name="peso"
             value="Accessories"
-            [(ngModel)]="product.category"
+            [(ngModel)]="product.peso"
           ></p-radioButton>
-          <label for="category1">Accessórios</label>
+          <label for="peso1">Accessórios</label>
         </div>
         <div class="p-field-radiobutton p-col-6">
           <p-radioButton
