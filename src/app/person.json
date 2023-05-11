@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "nome": "joao silva",
+      "genero": "Masculino",
+      "altura": 190,
+      "peso": 86,
+      "telefone": "11111333",
+      "observacoes": "nenhuma"
+    },
+    {
+      "id": "2",
+      "nome": "Pedro silva",
+      "genero": "Feminino",
+      "altura": 186,
+      "peso": 76,
+      "telefone": "33334444",
+      "observacoes": "nenhuma"
+    },
+    {
+      "id": "3",
+      "nome": "Maria silva",
+      "genero": "Outro",
+      "altura": 160,
+      "peso": 56,
+      "telefone": "77778888",
+      "observacoes": "nenhuma"
+    }
+  ]
+}
