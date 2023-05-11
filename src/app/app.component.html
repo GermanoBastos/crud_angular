@@ -172,7 +172,7 @@
     <div class="p-field">
       <label for="name">Altura</label>
       <input
-        type="text"
+        type="number"
         pInputText
         id="altura"
         [(ngModel)]="product.altura"
@@ -181,6 +181,34 @@
       />
       <small class="p-invalid" *ngIf="submitted && !product.altura"
         >Altura é requerido.</small
+      >
+    </div>
+    <div class="p-field">
+      <label for="name">Peso</label>
+      <input
+        type="number"
+        pInputText
+        id="peso"
+        [(ngModel)]="product.peso"
+        required
+        autofocus
+      />
+      <small class="p-invalid" *ngIf="submitted && !product.peso"
+        >Peso é requerido.</small
+      >
+    </div>
+    <div class="p-field">
+      <label for="name">Telefone</label>
+      <input
+        type="number"
+        pInputText
+        id="telefone"
+        [(ngModel)]="product.telefone"
+        required
+        autofocus
+      />
+      <small class="p-invalid" *ngIf="submitted && !product.telefone"
+        >Telefone é requerido.</small
       >
     </div>
     <div class="p-field">
@@ -193,26 +221,6 @@
         rows="3"
         cols="20"
       ></textarea>
-    </div>
-
-    <div class="p-formgrid p-grid">
-      <div class="p-field p-col">
-        <label for="price">Preço</label>
-        <p-inputNumber
-          id="price"
-          [(ngModel)]="product.price"
-          mode="currency"
-          currency="USD"
-          locale="en-US"
-        ></p-inputNumber>
-      </div>
-      <div class="p-field p-col">
-        <label for="quantity">Quantidade</label>
-        <p-inputNumber
-          id="quantity"
-          [(ngModel)]="product.quantity"
-        ></p-inputNumber>
-      </div>
     </div>
   </ng-template>
 
