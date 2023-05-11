@@ -141,7 +141,7 @@
     </ng-template>
     <ng-template pTemplate="summary">
       <div class="p-d-flex p-ai-center p-jc-between">
-        Total de  {{ products ? products.length : 0 }} Produtos.
+        Total de {{ products ? products.length : 0 }} Produtos.
       </div>
     </ng-template>
   </p-table>
@@ -170,57 +170,29 @@
       >
     </div>
     <div class="p-field">
-      <label for="altura">Altura</label>
-      <textarea
+      <label for="name">Altura</label>
+      <input
+        type="text"
+        pInputText
         id="altura"
-        pInputTextarea
         [(ngModel)]="product.altura"
+        required
+        autofocus
+      />
+      <small class="p-invalid" *ngIf="submitted && !product.altura"
+        >Altura é requerido.</small
+      >
+    </div>
+    <div class="p-field">
+      <label for="observacoes">Observações</label>
+      <textarea
+        id="observacoes"
+        pInputTextarea
+        [(ngModel)]="product.observacoes"
         required
         rows="3"
         cols="20"
       ></textarea>
-    </div>
-
-    <div class="p-field">
-      <label class="p-mb-3">Peso</label>
-      <div class="p-formgrid p-grid">
-        <div class="p-field-radiobutton p-col-6">
-          <p-radioButton
-            id="category1"
-            name="peso"
-            value="Accessories"
-            [(ngModel)]="product.peso"
-          ></p-radioButton>
-          <label for="peso1">Accessórios</label>
-        </div>
-        <div class="p-field-radiobutton p-col-6">
-          <p-radioButton
-            id="category2"
-            name="category"
-            value="Clothing"
-            [(ngModel)]="product.category"
-          ></p-radioButton>
-          <label for="category2">Clothing</label>
-        </div>
-        <div class="p-field-radiobutton p-col-6">
-          <p-radioButton
-            id="category3"
-            name="category"
-            value="Electronics"
-            [(ngModel)]="product.category"
-          ></p-radioButton>
-          <label for="category3">Electronicos</label>
-        </div>
-        <div class="p-field-radiobutton p-col-6">
-          <p-radioButton
-            id="category4"
-            name="category"
-            value="Fitness"
-            [(ngModel)]="product.category"
-          ></p-radioButton>
-          <label for="category4">Fitness</label>
-        </div>
-      </div>
     </div>
 
     <div class="p-formgrid p-grid">
