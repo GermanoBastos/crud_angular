@@ -103,7 +103,7 @@
           <p-tableCheckbox [value]="person"></p-tableCheckbox>
         </td>
         <td>{{ person.nome }}</td>
-        <td>{{ person.peso}}</td>
+        <td>{{ person.peso }}</td>
         <td>{{ person.altura }}</td>
 
         <td>
@@ -140,12 +140,6 @@
   styleClass="p-fluid"
 >
   <ng-template pTemplate="content">
-    <img
-      [src]="'assets/showcase/images/demo/product/' + product.image"
-      [alt]="product.image"
-      class="product-image"
-      *ngIf="product.image"
-    />
     <div class="field">
       <label for="name">Name</label>
       <input
@@ -165,7 +159,7 @@
       <textarea
         id="description"
         pInputTextarea
-        [(ngModel)]="product.description"
+        [(ngModel)]="person.observacoes"
         required
         rows="3"
         cols="20"
